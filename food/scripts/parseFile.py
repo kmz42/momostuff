@@ -38,7 +38,7 @@ i = 0
 while (i < len(content)-1):
     i = i + 1
     #If the line is empty, add \n to the text
-    if (len(content[i]) == 0 or content[i] == '\n'):
+    if (len(content[i].strip()) == 0 or content[i] == '\n'):
         jsonobj['content'][-1]['text'] += '\n'
         continue
     #Check if this is a new section, defined by line ending in ':'
