@@ -56,4 +56,4 @@ function loadStuff(contentEndpoint) {
     }
 }
 
-$().ready(() => loadStuff('005'));
+$().ready(() => loadStuff('008'));
