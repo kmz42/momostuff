@@ -21,7 +21,7 @@ function addContent(jsonInfo, contentEndpoint) {
     replaceTitle(title);
     for (i = 0; i < content.length; i++) {
         nextContent = content[i]
-        addItem(contentEndpoint + '/' + nextContent.file, nextContent.text, i == 0);
+        addItem('https://s3.amazonaws.com/www.momobot.net/food/' + contentEndpoint + '/' + nextContent.file, nextContent.text, i == 0);
     }
 }
 
@@ -56,4 +56,4 @@ function loadStuff(contentEndpoint) {
     }
 }
 
-$().ready(() => loadStuff('008'));
+$().ready(() => loadStuff('010'));
